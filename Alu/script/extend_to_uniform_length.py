@@ -14,4 +14,3 @@ for index, row in file.iterrows():
     counts = BW_file.values(row.chromosome, row.start_base + row.start_interval, row.stop_base + row.stop_interval)
     counts = extend_to_uniform_length(counts, max_length)
     print(counts)
-    
